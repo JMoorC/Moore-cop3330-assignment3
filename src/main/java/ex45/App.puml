@@ -1,0 +1,9 @@
+@startuml
+
+class App{
+    +readFile()
+    +replaceWord()
+    +printToFile()
+    +promptFile()
+}
+@enduml

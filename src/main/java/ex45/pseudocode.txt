@@ -1,0 +1,40 @@
+main(){
+    get input file();
+    parse input file into arraylist();
+    replace words in arraylist();
+    print to new file();
+
+}
+
+String getinputfile(){
+    print prompt
+    scan response
+    return response
+}
+
+Arraylist readFile(input file){
+    created buffered reader
+    create arraylist
+    while the reader still scans a line from the input file{
+        add parsed line to another arraylist index
+    }
+    close reader
+    return arraylist
+}
+
+String replace word(arraylist, target, replacement){
+    create output string
+    for each index of arraylist{
+        get string from arraylist;
+        replace words in string;
+        add string to end of output with a newline character
+    }
+    return output string
+}
+
+void print to file(destination file name, output string){
+    created BufferedWriter with destination file
+    write the output string to the destination file
+    close the writer;
+}
+
