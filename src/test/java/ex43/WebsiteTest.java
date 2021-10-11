@@ -17,8 +17,8 @@ class WebsiteTest {
     }
     @Test
     void createFolder(){
-        assertEquals(System.getProperty("user.dir"), mySite.homeDir);
         String s = System.getProperty("user.dir") + "\\website\\shotput";
+        mySite.homeDir = System.getProperty("user.dir");
         mySite.createFolder();
         assertEquals(s, mySite.homeDir);
     }

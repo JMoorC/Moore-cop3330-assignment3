@@ -27,6 +27,7 @@ public class Website {
     public Website(String sN, String a, boolean hasJ, boolean hasC){
         siteName = sN;
         author = a;
+        homeDir = System.getProperty("user.dir");
         hasJS = hasJ;
         hasCSS = hasC;
         createFolder();
