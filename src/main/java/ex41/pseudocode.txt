@@ -1,0 +1,37 @@
+
+
+main(){
+    document = values of input file
+    sort document;
+    printToFile(PreparedOutput from document);
+}
+
+read from file(given filename){
+    create string arraylist list;
+    while no exceptions{
+        create bufferReader;
+        create string;
+        while bufferReader has content{
+            add name to list;
+        }
+        close reader;
+    }
+    return list;
+}
+
+Prepare Output(arraylist list){
+    int = size of list;
+    string output = formatted response %d, use list for %d;
+    for (size of list){
+        add each name to output;
+    }
+    return output;
+}
+
+send to file(arraylist list){
+    while no exceptions{
+        create buffered writer;
+        write output to output file
+        close writer;
+    }
+}

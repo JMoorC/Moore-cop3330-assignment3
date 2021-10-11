@@ -1,0 +1,12 @@
+@startuml
+
+class App{
+    main()
+    readFile()
+    prepareOutput()
+    printToFile()
+
+}
+
+
+@enduml
