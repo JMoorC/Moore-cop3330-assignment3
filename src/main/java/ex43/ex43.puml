@@ -1,0 +1,21 @@
+@startuml
+class App{
+    main()
+}
+
+class Website{
+    -siteName : String
+    -author : String
+    -homeDir : String
+    -hasJS : boolean
+    -hasCSS : boolean
+    +Website()
+    +getInfo()
+    +formatOutput()
+    +createIndex()
+    +createFolder()
+}
+Website -- App
+
+
+@enduml

@@ -1,0 +1,61 @@
+Class Website{
+    String name
+    String author
+    Bool hasJS
+    Bool has CSS
+    String directory
+
+    constructor(){
+        get Info()
+        create home folder()
+        create index file ()
+        create js file if yes ()
+        create css file if yes ()
+    }
+
+    getInfo(){
+        ask for site name
+        set name field
+        ask for author
+        set author field
+        ask for javascript
+        set js field
+        ask for css
+        set css field
+    }
+
+    CreateIndex(){
+        create buffered writer and file with home director + filename;
+        write a formated output () to the file
+        print acknowledgement
+        close
+    }
+
+    formatoutput(){
+        create a formatted string with HTML style
+        insert elements into formatted string
+        return string
+    }
+
+    createFolder(){
+        set home directory equal to working directory + website;
+        create a file using home directory
+        if making directory works{
+            print acknowledgement
+        }
+
+        set home directory equal to working directory + website + siteName
+        create a file using home directory
+        if makking directory works{
+            print acknowledgement
+        }
+    }
+
+    createFolder(css or js){
+        create file = home directory + css/js
+        if making directory works{
+            print acknowledgement;
+        }
+    }
+
+}
