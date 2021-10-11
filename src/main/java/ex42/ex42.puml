@@ -1,0 +1,31 @@
+@startuml
+class App{
+    main()
+}
+
+class Roster{
+    -roster: ArrayList<Person>
+    -formattedRos: String
+
+    +createOutput()
+    +writeOutput()
+    +Roster()
+    +getForRos()
+}
+
+class Person{
+    -fName: String
+    -lName: String
+    -salary: int
+
+    +Person()
+    +getSal()
+    +getFirst()
+    +getLast()
+    +addFName()
+    +addLName()
+    +addSal()
+}
+Roster o-- Person
+Roster -- App
+@enduml

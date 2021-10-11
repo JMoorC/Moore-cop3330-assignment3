@@ -1,0 +1,6 @@
+Jacob,John,4400
+Abraham,Jim,2200
+Martin,Tim,46000
+Chauslin,Fred,34500
+McDauber,Klein,14200
+Wang,Kevin,65000

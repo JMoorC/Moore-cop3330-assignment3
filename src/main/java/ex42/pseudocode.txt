@@ -1,0 +1,63 @@
+class Roster{
+    field arraylist of person objects
+    String formattedRoster;
+
+    createOutput(){
+        String output = headers;
+        for size of arraylist{
+            output = formatted line with person fields
+        }
+        formatted roster = output;
+    }
+
+    constructor(filename){
+        create buffered reader with filename;
+        for (file has a line){
+            split line into string array
+            person lName gets index 0;
+            person FName gets index 1;
+            person salary gets index 2;
+        }
+        close file;
+    }
+
+    writeOutput(destination file){
+        create buffered writer with file;
+        write output to file
+        close file;
+    }
+
+
+
+class Person{
+    first name field
+    last name field
+    salary field
+
+    getSal(){
+        return salary
+    }
+
+    getFName(){
+        return last name
+    }
+
+    getLName(){
+        return last name
+    }
+
+    constructor(){
+    }
+    constructor(fName, lName, sal){
+    add fname
+    add lname
+    add sal
+    }
+
+    addFName(name){
+    }
+    addLName(name(){
+    }
+    addSal(){
+    }
+}
