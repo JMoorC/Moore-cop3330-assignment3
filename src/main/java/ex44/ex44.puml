@@ -1,0 +1,27 @@
+@startuml
+
+Class App{
+
+main()
++hasProd()
++ask()
+
+}
+
+Class Products{
+    -name : String
+    -price : double
+    -quantity : int
+
+    +Products()
+    +getName()
+    +getPrice()
+    +getQuantity()
+    +setName()
+    +setPrice()
+    +setQuantity()
+    + printItem()
+}
+
+App -> Products : creates
+@enduml

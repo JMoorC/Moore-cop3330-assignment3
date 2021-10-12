@@ -10,7 +10,7 @@ import java.io.*;
 public class App {
 
     public static void main(String[] args){
-        Roster roster = new Roster("exercise_42_input.txt");
+        Roster roster = new Roster("exercise42_input.txt");
         roster.createOutput();
         roster.writeOutput("exercise_42_output.txt");
 

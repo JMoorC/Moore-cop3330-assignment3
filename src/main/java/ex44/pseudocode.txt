@@ -1,0 +1,76 @@
+Class App(){
+    main(){
+        create file using input file
+        parse json file using jsonParser
+        create json object from parser
+        create json array from json object
+        create arraylist of Products
+        for each element in the json array{
+            get the element as a jsonObject
+            get a string from name field in jsonObject
+            get a double from price field in jsonObject
+            get an integer from quantity field in jsonObject
+
+            create a new Products object with string ,double, and integer
+            add the new Products to the arrayList
+        }
+        ask user for product using arraylist
+    }
+
+    hasProd(name, arraylist of products){
+        for each element in arraylist{
+            if its name is equal to the passed name{
+                return the index
+            }
+        }
+        return -1 if loop completes
+    }
+
+    ask(arraylist of products){
+        create scanner
+        ask user for product name
+        scan value to string
+        set index to hasProd(scanner string)
+        while index is -1 {
+            ask user to enter again
+            scan entry into string
+            calculate index using hasProd again
+        }
+        print out the printItem() string from the element at index
+    }
+}
+
+Class Products{
+    string name field
+    double price field
+    int quantity field
+
+    public Products (string, double, int){
+        assign each field to respective value
+    }
+
+    getName(){
+        return name
+    }
+    getPrice(){
+        return price
+    }
+    getQuantity(){
+        return quantity
+    }
+
+    setName(string){
+        set name to equal string
+    }
+    setPrice(double){
+        set price to equal double
+    }
+    setQuantity(integer){
+        set quantity to equal integer
+    }
+
+    printItem(){
+        format string to display each field
+        return string
+    }
+}
