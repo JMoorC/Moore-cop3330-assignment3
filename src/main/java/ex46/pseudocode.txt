@@ -1,0 +1,91 @@
+Class App(){
+    main(){
+        read file into arraylist
+        pass arraylist into WordList constructor
+        sort WordList
+        format chart and put into string
+        write string to file
+    }
+    readFile(file){
+        create BufferedReader
+        for each line{
+            split line by spaces into string array
+            for each string in array{
+                add string to arraylist
+            }
+        }
+        close BufferedReader
+    }
+    writeFile{file, output){
+        create BufferedWriter
+        write output to file
+        close BufferdWriter
+    }
+}
+
+Class Word(){
+    name field
+    number field
+
+    getName()
+    getNumber()
+    setName()
+    setNumber()
+    incrementNumber()
+
+    Contructor()
+}
+
+Class WordList(){
+    Array of Word objects wordList;
+
+    contstructor(empty)
+    constructor(Arraylist of strings){
+        for each element in string list{
+            if wordList has word){
+                increment the number field of word
+            }
+            else add a new Word to wordList
+        }
+    }
+
+    add(){
+        add word to wordlist
+    }
+    add(with number){
+        add word to list
+        set number field
+    }
+
+    get(index){
+        return word at index
+    }
+    hasWord(name){
+        if wordList is empty return false
+        for each element in wordlist{
+            if Word name = input name{
+                return true;
+        }
+        return false if loop finishes
+    }
+    increment(element){
+        loop through wordList to find index of corresponding element
+        call the increment method of named element
+    }
+
+    sort(){
+        bubble sort the wordList
+    }
+
+    createChart(){
+        create string output;
+        loop through each element in wordList{
+            create temp string
+            loop for value of number in Word{
+                add asterisk to temp string
+            }
+            add formatted string + temp string to output
+        }
+        return output string
+    }
+}

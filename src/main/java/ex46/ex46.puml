@@ -1,0 +1,33 @@
+@startuml
+
+Class WordList{
+    -wordList : ArrayList<Word>
+    +WordList()
+    +Sort()
+    +createChart()
+    +increment();
+    +add()
+    +add()
+    +contains()
+    +get()
+
+}
+
+Class Word{
+    -word : string
+    -count : int
+    +Word()
+    +setWord()
+    +setCount()
+    +getWord()
+    +getCount()
+    +increment()
+}
+Class Main{
+    readFile()
+    writeFile()
+}
+Main <- WordList
+WordList o-- Word
+
+@enduml

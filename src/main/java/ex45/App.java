@@ -4,7 +4,6 @@
  */
 package ex45;
 
-import ex42.Person;
 
 import java.util.*;
 import java.io.*;
